@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>CV Generator</h1>
+    </header>
+
+    <main>
+        <form id="cv-form">
+            <input type="text" id="name" placeholder="Name" required><br>
+            <input type="number" id="age" placeholder="Age" required><br>
+            <input type="text" id="workplace" placeholder="Workplace" required><br>
+            <!-- Add more input fields for other details as needed -->
+            <button type="submit">Generate CV</button>
+        </form>
+
+        <div id="cv-output"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CV Generator. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
